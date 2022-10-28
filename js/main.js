@@ -33,14 +33,6 @@ $(function () {
         autoplaySpeed: 5000,
     })
 
-
-    var clickElem = document.getElementById('click');
-    var noneBlock = document.getElementById('ordering');
-    clickElem.addEventListener('click', function (e) {
-        document.getElementById('main').style.display = 'block';
-        noneBlock.style.display = 'none';
-    })
-
     new WOW().init();
 });
 

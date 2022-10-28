@@ -13,6 +13,7 @@
                 rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
         <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="scss/style.scss">
         <link rel="stylesheet" type="" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
                 integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -33,19 +34,19 @@
                                                                 alt="logo"></a></div>
                                         <nav>
                                                 <ul class="header-menu__list header-menu__list-media">
-                                                        <a href="#about">
+                                                        <a href="index.html">
                                                                 <li class="header-menu__list-li">Про фітнес клуб</li>
                                                         </a>
                                                         <a href="#training">
                                                                 <li class="header-menu__list-li">Тренування</li>
                                                         </a>
-                                                        <a href="#our-club">
+                                                        <a href="index.html">
                                                                 <li class="header-menu__list-li">Галерея</li>
                                                         </a>
-                                                        <a href="#our-trainers">
+                                                        <a href="index.html">
                                                                 <li class="header-menu__list-li">Наші тренери</li>
                                                         </a>
-                                                        <a href="#connection">
+                                                        <a href="index.html">
                                                                 <li class="header-menu__list-li">Контакти</li>
                                                         </a>
                                                 </ul>
@@ -61,130 +62,75 @@
                         </div>
                 </div>
                 <div class="container">
-                        <div class="header-inner" id="header-inner">
-                                <div class="header-content">
-                                        <div class="header-content__right">
-                                                <div class="header-content__right-info">
-                                                        <div
-                                                                class="header-content__right-info-title title wow animate__animated animate__fadeInLeft ">
-                                                                Фітнес клуб
-                                                                преміум класу
+                        <div class="ordering" id="ordering">
+                                <div class="ordering-title">Оформлення замовлення</div>
+                                <div class="ordering-bg">
+                                        <form class="ordering-inner">
+                                                <div class="ordering-inner__left  ordering-inner__form">
+                                                        <div class="ordering__container-form">
+                                                                <div class="ordering__group-input">
+                                                                        <input type="name" name="name"
+                                                                                placeholder="Введіть ваше ім’я"
+                                                                                required="" class="ordering-input">
+                                                                        <input type="lastname" name="name"
+                                                                                placeholder="Введіть ваше прізвище"
+                                                                                required="" class="ordering-input">
+                                                                        <input type="tel" name="tel"
+                                                                                placeholder="Введіть ваш номер телефону"
+                                                                                required="" class="ordering-input">
+                                                                        <input type="email" name="email"
+                                                                                placeholder="Введіть ваш email "
+                                                                                required="" class="ordering-input">
+                                                                </div>
+                                                                <div class="ordering-textarea">
+                                                                        <div class="ordering-textarea-title">залишити
+                                                                                Коментар</div>
+                                                                        <textarea class="ordering__forms-input"
+                                                                                id="message" name="Message-Field"
+                                                                                maxlength="5000"
+                                                                                data-name="Message Field" placeholder=""
+                                                                                style="width: 100%; height: 264px;"></textarea>
+                                                                </div>
                                                         </div>
-                                                        <div
-                                                                class="header-content__right-info-text wow animate__animated animate__fadeInRight ">
-                                                                У вас буде
-                                                                можливість
-                                                                працювати
-                                                                зі
-                                                                справжніми тренерами-професіоналами та займатися на
-                                                                найсучаснішому
-                                                                обладнені, що
-                                                                допоможе вам швидко досягнути бажаного результату</div>
-                                                        <a href="#about"
-                                                                class="header-content__right-info-btn btn wow animate__animated animate__fadeInDown ">Дізнатися
-                                                                більше</a>
                                                 </div>
-                                                <div>
-                                                        <ul class="header-content__right-social">
-                                                                <a href="https://www.instagram.com/maximus_hlukhiv/"
-                                                                        class="header-content__right-social-link">
-                                                                        <li>Instagram</li>
-                                                                </a>
-                                                                <a href="https://goo.gl/maps/vwxGHxtwaHgawLtn8"
-                                                                        class="header-content__right-social-link">
-                                                                        <li>Google</li>
-                                                                </a>
-                                                                <a href="https://www.youtube.com/"
-                                                                        class="header-content__right-social-link">
-                                                                        <li>YouTube</li>
-                                                                </a>
-                                                        </ul>
-                                                </div>
-                                        </div>
-                                        <div class="header-content__left">
-                                                <div class="solar-system">
-                                                        <div class="mercury-orbit mercury-orbit-1"></div>
-                                                        <div class="mercury-orbit mercury-orbit-2"></div>
-                                                        <div class="mercury-1"></div>
-                                                        <div class="mercury-2"></div>
-                                                        <div class="mercury-3"></div>
-                                                </div>
-                                                <img src="img/header-img.jpg" alt="header-img" class="header-img">
-                                                <div class="header-content__left-descr">
-                                                        <div class="header-content__left-descr-title">Зміцни своє тіло
-                                                                та
-                                                                здоров’я</div>
-                                                        <div class="header-content__left-descr-text">Ставай краще з
-                                                                кожним днем
-                                                                тренування</div>
-                                                </div>
-                                        </div>
 
+                                                <div class="ordering-inner__right">
+                                                        <ul class="ordering-inner__right-radio-buttons">
+                                                                <li>
+                                                                        <input type="radio" id="f-option"
+                                                                                name="selector">
+                                                                        <label for="f-option">Mini</label>
+                                                                </li>
+
+                                                                <li>
+                                                                        <input type="radio" id="s-option"
+                                                                                name="selector">
+                                                                        <label for="s-option">midi</label>
+
+                                                                </li>
+
+                                                                <li>
+                                                                        <input type="radio" id="t-option"
+                                                                                name="selector">
+                                                                        <label for="t-option">Maxi</label>
+
+                                                                </li>
+                                                        </ul>
+                                                        <div class="ordering-bottom">
+                                                                <div class="ordering-descr"><span> Зверніть
+                                                                                увагу:</span>
+                                                                        протягом години консультан зв’яжиться з вами
+                                                                </div>
+                                                                <button id="click" class="ordering-form-btn">Підтвердити
+                                                                        замовлення</button>
+                                                        </div>
+                                                </div>
+                                        </form>
                                 </div>
                         </div>
-                </div>
                 </div>
         </header>
 
-        <section>
-                <div class="container">
-                        <div class="about" id="about">
-                                <div class="about-inner">
-                                        <div class="about-inner__box">
-                                                <div class="about-inner__box-title wow animate__animated animate__fadeInLeft "
-                                                        data-wow-offset="50">
-                                                        Про фітнес клуб</div>
-                                                <div class="about-inner__box-text wow animate__animated animate__fadeInRight "
-                                                        data-wow-offset="50">
-                                                        <p> <span class="about-inner__box-text-p">Фітнес центр
-                                                                        <span class="about-inner__box-text-img">
-                                                                        </span></span>- це
-                                                                новий, елітний,
-                                                                спортивно-оздоровчий комплекс.
-                                                        </p>
-                                                        <p> Тут кожен зможе обрати для себе будь-який комплекс
-                                                                тренувань.
-                                                                Саме
-                                                                у нас ти зможешь створити тіло своєї мрії.</p>
-                                                </div>
-                                                <a class="about-inner__box-btn wow animate__animated animate__fadeInDown "
-                                                        data-wow-offset="50" href="#training">Купити комплекс
-                                                        тренувань</a>
-                                        </div>
-                                </div>
-                                <div class="about-container">
-                                        <div class="about-container__box about-container__box-1 wow animate__animated animate__fadeInLeft animate_ animate__delay-0.25s"
-                                                data-wow-offset="50">
-                                                <img src="img/about-1.svg" alt="" class="about-container__box-img">
-                                                <div class="about-container__box-title">Зручне розташування</div>
-                                                <div class="about-container__box-text">Наш клуб розташований
-                                                        в доступному місці</div>
-                                        </div>
-                                        <div class="about-container__box about-container__box-2 wow animate__animated animate__fadeInRight animate_ animate__delay-0.5s"
-                                                data-wow-offset="50">
-                                                <img src="img/about-2.svg" alt="" class="about-container__box-img">
-                                                <div class="about-container__box-title">Ефективні тренування</div>
-                                                <div class="about-container__box-text">Тренування з найкращими тренерами
-                                                        нашого міста</div>
-                                        </div>
-                                        <div class="about-container__box about-container__box-3 wow animate__animated animate__fadeInLeft animate_ animate__delay-1.5s"
-                                                data-wow-offset="50">
-                                                <img src="img/about-3.svg" alt="" class="about-container__box-img">
-                                                <div class="about-container__box-title">Сучасне обладнення</div>
-                                                <div class="about-container__box-text">Спортзали наповнені найновішим
-                                                        спортивним обладненням</div>
-                                        </div>
-                                        <div class="about-container__box about-container__box-4 wow animated animate__fadeInRight animate_ animate__delay-2s"
-                                                data-wow-offset="50">
-                                                <img src="img/about-4.svg" alt="" class="about-container__box-img">
-                                                <div class="about-container__box-title">Доступні ціни</div>
-                                                <div class="about-container__box-text">Круті комплекси тренування за
-                                                        доступними цінами</div>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
 
         <section>
                 <div class="container">
@@ -200,7 +146,7 @@
                                                         спортивний комплекс, де все продумано до дрібниць</div>
                                         </div>
                                         <div class="training-sliders-s">
-                                                <a href="ordering-1.html" class="">
+                                                <a href="#" class="">
                                                         <div class="training-inner__sliders">
                                                                 <div
                                                                         class="training-inner__sliders-box training-sliders">
@@ -247,7 +193,7 @@
                                                                         </div>
                                                                 </div>
                                                 </a>
-                                                <a href="ordering-1.html">
+                                                <a href="#">
                                                         <div class="training-inner__sliders-box training-sliders">
                                                                 <img src="img/traing-slider-2.png"
                                                                         alt="traing-slider-2">
@@ -284,7 +230,7 @@
                                                                 </div>
                                                         </div>
                                                 </a>
-                                                <a href="ordering-1.html">
+                                                <a href="#">
                                                         <div class="training-inner__sliders-box training-sliders">
                                                                 <img src="img/traing-slider-1.png"
                                                                         alt="traing-slider-1">
@@ -323,7 +269,7 @@
                                                         </div>
                                                 </a>
                                         </div>
-                                        <a href="ordering-1.html">
+                                        <a href="#">
                                                 <div class="training-inner__sliders-media">
                                                         <div class="training-inner__sliders-box training-sliders">
                                                                 <img src="img/traing-slider-1.png"
@@ -365,7 +311,7 @@
                                                                 </div>
                                                         </div>
                                         </a>
-                                        <a href="ordering-1.html">
+                                        <a href="#">
                                                 <div class="training-inner__sliders-box training-sliders">
                                                         <img src="img/traing-slider-2.png" alt="traing-slider-2">
                                                         <div class="training-sliders__inside">
@@ -400,7 +346,7 @@
                                                         </div>
                                                 </div>
                                         </a>
-                                        <a href="ordering-1.html">
+                                        <a href="#">
                                                 <div class="training-inner__sliders-box training-sliders">
                                                         <img src="img/traing-slider-1.png" alt="traing-slider-1">
                                                         <div class="training-sliders__inside">
@@ -441,121 +387,6 @@
                 </div>
         </section>
 
-        <section>
-                <marquee>
-                        <div class='logo__scroll'>
-                                <div class="container">
-                                        <p id='stroke' class='logo__stroke'>
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                                <img src="img/logo-marquee.svg" alt="marquee">
-                                        </p>
-                                </div>
-                        </div>
-                </marquee>
-        </section>
-
-        <section>
-                <div class="container">
-                        <div class="our-club" id="our-club">
-                                <div class="our-club__title wow animate__animated animate__fadeInLeft"
-                                        data-wow-offset="50">
-                                        Наш клуб</div>
-                                <div class="our-club__slider">
-                                        <img src="img/our-club-1.png" alt="our-club" class="our-club__img">
-                                        <img src="img/our-club-3.png" alt="our-club" class="our-club__img">
-                                        <img src="img/our-club-4.png" alt="our-club" class="our-club__img">
-                                        <img src="img/our-club-2.png" alt="our-club" class="our-club__img">
-                                </div>
-                        </div>
-                </div>
-        </section>
-
-        <section>
-                <div class="container">
-                        <div class="our-trainers" id="our-trainers">
-                                <div class="our-trainers__title wow animate__animated animate__fadeInRight "
-                                        data-wow-offset="50">
-                                        Наші тренери</div>
-                                <div class="our-trainers__descr wow animate__animated animate__fadeInLeft "
-                                        data-wow-offset="50">
-                                        На цій сторінці ви зможете основну інформацію про
-                                        тренерів нашого клубу</div>
-                                <div class="our-trainers__slider">
-                                        <div class="our-trainers__slider-box our-trainers__slider-box-1">
-                                                <img src="img/our-trainers-1.png" alt="our-club"
-                                                        class="our-trainers__img">
-                                                <div class="our-trainers__slider-box-title">Яковчук Марина</div>
-                                                <div class="our-trainers__slider-box-info">Досвід роботи - 15 років
-                                                </div>
-                                        </div>
-                                        <div class="our-trainers__slider-box our-trainers__slider-box-2">
-                                                <img src="img/our-trainers-3.png" alt="our-club"
-                                                        class="our-trainers__img">
-                                                <div class="our-trainers__slider-box-title">Науменко Олександр</div>
-                                                <div class="our-trainers__slider-box-info">Досвід роботи - 6 років
-                                                </div>
-                                        </div>
-                                        <div class="our-trainers__slider-box our-trainers__slider-box-3">
-                                                <img src="img/our-trainers-2.png" alt="our-club"
-                                                        class="our-trainers__img">
-                                                <div class="our-trainers__slider-box-title">Пономаренко Софія</div>
-                                                <div class="our-trainers__slider-box-info">Досвід роботи - 3 роки
-                                                </div>
-                                        </div>
-                                        <div class="our-trainers__slider-box our-trainers__slider-box-4">
-                                                <img src="img/our-trainers-4.png" alt="our-club"
-                                                        class="our-trainers__img">
-                                                <div class="our-trainers__slider-box-title">Бандера Степан </div>
-                                                <div class="our-trainers__slider-box-info">Досвід роботи - 7 роки
-                                                </div>
-                                        </div>
-                                        <div class="our-trainers__slider-box our-trainers__slider-box-5">
-                                                <img src="img/our-trainers-5.png" alt="our-club"
-                                                        class="our-trainers__img">
-                                                <div class="our-trainers__slider-box-title">Оліфіренко Матвій</div>
-                                                <div class="our-trainers__slider-box-info">Досвід роботи - 8 років
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
-
-
-        <section>
-                <div class="connection" id="connection">
-                        <div class="container">
-                                <div class="connection__inner">
-                                        <div class="connection__inner-map wow animate__animated animate__fadeInLeft"
-                                                data-wow-offset="10">
-                                                <iframe class="connection__inner-map-i" width="600" height="373"
-                                                        style="border: 0;"
-                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.822905851631!2d33.91277893185574!3d51.681384574617724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412bf3b49378670d%3A0xaad97c6c88ea863c!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0LsgIk1heGltdXMi!5e0!3m2!1sru!2snl!4v1662665571436!5m2!1sru!2snl"
-                                                        frameborder="0" allowfullscreen="allowfullscreen"
-                                                        aria-hidden="false" tabindex="0"></iframe>
-                                        </div>
-                                        <div class="connection__inner-form wow animate__animated animate__fadeInRight"
-                                                data-wow-offset="10">
-                                                <div class="connection__inner-form-title"><span>Маєте питання?</span>
-                                                        Залиште запит і ми зателефонуємо вам у межах 10 хвилин</div>
-                                                <form>
-                                                        <input type="name" name="name" placeholder="Ім’я та призвище"
-                                                                required="" class="input">
-                                                        <input type="tel" name="tel" placeholder="Номер телефону"
-                                                                required="" class="input">
-                                                        <button class="connection__inner-form-btn">Відправити</button>
-                                                </form>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
 
         <footer>
                 <div class="footer">
@@ -671,8 +502,6 @@
                         </div>
                 </div>
         </div>
-
-
 
         <script src="js/libs.min.js "></script>
         <script src="js/script.js "></script>
